@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-    <a class="navbar-brand" href="{{ route('root_path') }}">Laracarte</a>
+    <a class="navbar-brand" href="{{ route('root_path') }}">{{ config('app.name') }}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -24,7 +24,7 @@
                     <li><a href="https://larachat.com">Larachat</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+        <li><a href="{{ route('contact_path') }}">Contact</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
